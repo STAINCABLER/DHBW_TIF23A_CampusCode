@@ -1,0 +1,24 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #C1C1C1;
+    background-color: #0E131F;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    color: #ff6347;
+}
+
+.highlight {
+    background-color: rgba(0, 36, 58, 0.58);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.note {
+    color: #ff0000;
+    font-weight: bold;
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>CampusCode</title>
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+<div class="container">
+    <div class="sidebar">
+        <button class="sidebar-button">Login/Registrieren</button>
+        </div>
+
+    <div class="main-content">
+        <div class="big-field-container">
+            <div class="big-field">
+                <p id="alte_daten"></p>
+                <p><br></p>
+                <p id="answer_md"></p>
+            </div>
+
+            <button class="top-right-button">Sprache</button>
+        </div>
+
+        <div class="buttons lower-buttons">
+            <button class="changers" onclick="activateButton(this)" value="option1">test1</button>
+            <button class="changers" onclick="activateButton(this)" value="option2">test2</button>
+        </div>
+
+        <div class="bottom-field">
+            <label for="thema">Dein Thema:</label>
+            <div class="bottom-field-container">
+                <input autocomplete="off" id="thema" name="thema-field" type="text">
+                <button class="right-button" id="laden">Senden</button>
+            </div>
+            </div>
+        </div>
+</div>
+<script src="app.js"></script>
+</body>
+</html>

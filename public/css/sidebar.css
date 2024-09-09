@@ -1,0 +1,110 @@
+/* Verhindert das die SPAN Elemente das klicken des Buttons verhindern */
+nav button span {
+    pointer-events: none;
+    width: inherit;
+}
+
+nav span {
+    pointer-events: none;
+    width: inherit;
+}
+
+/* Sidebar Styles */
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; /* Align items to the end for better alignment */
+    justify-content: flex-start; /* Align items to the start */
+    background-color: #192338; /* Background color for the sidebar */
+    width: 14vw;
+    transition: width 0.3s ease, height 0.3s ease, border-radius 0.3s ease; /* Animated transition */
+}
+
+/* Sidebar Schmal */
+.sidebar.schmal {
+    background-color: #192338;
+    width: 5vw;
+    transition: width 0.3s ease, height 0.3s ease, border-radius 0.3s ease; /* Animated transition */
+}
+
+/* Square Button Styles */
+.square-button {
+    width: 50px; /* Fixed width */
+    height: 50px; /* Fixed height */
+    background-color: #38405FCC; /* Background color */
+    color: #C1C1C1; /* Text color */
+    border-radius: 10px; /* Rounded corners */
+    border: 2px solid #59546CCC; /* Border with solid black color */
+    display: flex;
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+.square-button:hover {
+    background-color: #2D344DCC; /* Darker blue on hover */
+}
+
+/* Input Button Styles */
+.input-button {
+    background-color: #38405FCC; /* Background color */
+    color: #C1C1C1; /* Text color */
+    border: none; /* No border */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+.input-button:hover {
+    background-color: #2D344DCC; /* Darker red on hover */
+}
+
+.square-input-button {
+    width: 50px; /* Fixed width */
+    height: 50px; /* Fixed height */
+    border-radius: 8px; /* Rounded corners */
+    display: flex; /* Flex display for icon and text */
+    align-items: center; /* Align items vertically center */
+    justify-content: space-between; /* Space between icon and text */
+    transition: width 0.6s ease, height 0.4s ease, border-radius 0.4s ease; /* Animated transition */
+}
+
+.rect-input-button {
+    padding: 8px 16px; /* Padding for spacing */
+    border-radius: 8px; /* Rounded corners */
+    display: flex; /* Flex display for icon and text */
+    align-items: center; /* Align items vertically center */
+    text-align: center; /* Center text */
+    justify-content: space-between; /* Space between icon and text */
+    transition: width 0.15s ease, height 0.4s ease, border-radius 0.3s ease; /* Animated transition */
+}
+
+/* Sidebar Icon Styles */
+.sidebar-icon {
+    width: 36px; /* Fixed width */
+    height: 36px; /* Fixed height */
+    margin: 8px; /* Margin for spacing */
+}
+
+.sb-max {} /* JS Hook class for max sidebar element */
+
+.sb-max.hidden {
+    display: none; /* Hide the max sidebar element */
+}
+
+.sb-mini {} /* JS Hook class for mini sidebar element */
+
+.sb-mini.hidden {
+    display: none; /* Hide the mini sidebar element */
+}
+
+.sidebar-toggle {} /* JS Hook class for sidebar toggle button */
+
+.text-gray-400 {
+    position: absolute;
+    bottom: 0;
+}
+
+#sidebar-login {}
+#sidebar-register {}
+#sidebar-logout {}
+#sidebar-settings {}
+#sidebar-help {}

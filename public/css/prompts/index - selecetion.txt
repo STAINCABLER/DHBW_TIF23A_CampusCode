@@ -1,0 +1,5 @@
+Schreibe mir ein JavaScript das mir aus allen Buttons mit der Klasse selection-pl, den Button raussucht, der geklickt wurde und diesem die ID selection-pl-button-selected gibt.
+Sollte ein Anderer Button zuvor diese ID haben, soll diese zuerst von diesem gelöscht werden, esseiden es ist der selbe Button.
+Zusätzlich soll das element mit der id selection-kl auf der x-achse animiert wieder anzeigt werden, sobald es ein element mit der id selection-pl-button-selected gibt.
+Wenn das element mit der id selection-kl wieder angezeigt wird, soll für alle Buttons mit der Klasse selection-kl, den Button raussucht, der geklickt wurde und diesem die ID selection-kl-button-selected gibt.
+Sollte ein Anderer Button zuvor diese ID haben, soll diese zuerst von diesem gelöscht werden, esseiden es ist der selbe Button.

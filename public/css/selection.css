@@ -1,0 +1,116 @@
+/* Klassen */
+.selections-container {
+    display: none;
+    flex-direction: column;
+    position: relative;
+}
+
+.selection-box {
+    background-color:  rgba(52, 53, 71, 0.8);
+    color: #D6D6D6;
+    height: 100%;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: space-between;
+    z-index: 2;
+}
+
+.selection-button {
+    padding: 10px;
+    text-align: center;
+    font-size: 1.2em;
+    cursor: pointer;
+    border-radius: 5px;
+    color: #D6D6D6;
+}
+
+/* Programming Language Selection */
+.selection-pl {}
+
+/* Programming Language Selection Buttons */
+/* Selection Button Programming Language Python */
+.selection-pl.button-1 {
+    background-color: #43aa8bCC;
+    cursor: pointer;
+}
+.selection-pl.button-1:hover {
+    background-color: #2c6e5a;
+}
+
+/* Selection Button Programming Language Java */
+.selection-pl.button-2 {
+    background-color: #f72585CC;
+    cursor: pointer;
+}
+.selection-pl.button-2:hover {
+    background-color: #a81a5b;
+}
+
+/* Selection Button Programming Language JavaScript */
+.selection-pl.button-3 {
+    background-color: #0077b6CC;
+    cursor: pointer;
+}
+.selection-pl.button-3:hover {
+    background-color: #00517c;
+}
+
+
+/* Knowledge Level Selection */
+.selection-kl {}
+
+/* Knowledge Level Selection Buttons */
+/* Selection Button Knowledge Level Beginner */
+.selection-kl.button-1 {
+    background-color: #4f772dCC;
+    cursor: pointer;
+}
+.selection-kl.button-1:hover {
+    background-color: #31572c;
+}
+
+/* Selection Button Knowledge Level Intermediate */
+.selection-kl.button-2 {
+    background-color: #f48c06CC;
+    cursor: pointer;
+}
+.selection-kl.button-2:hover {
+    background-color: #b16605;
+}
+
+/* SElection Button Knowledge Level Advanced */
+.selection-kl.button-3 {
+    background-color: #bf0603CC;
+    cursor: pointer;
+}
+.selection-kl.button-3:hover {
+    background-color: #8d0801;
+}
+
+
+/* IDs */
+/* Programming Language Selection */
+#selection-pl {}
+
+/* Programming Language Selection Buttons */
+/* Programming Language Selected */
+#selection-pl-button-selected {
+    border: white 2px solid;
+    cursor: pointer;
+}
+
+/* Knowledge Level Selection */
+#selection-kl {
+    transform: translateX(-100%); /* Startposition außerhalb des sichtbaren Bereichs */
+    transition: transform 2s ease-in-out; /* Transition festlegen */
+    animation-delay: 150ms;
+    display: none; /* Element zu Beginn verstecken */
+}
+
+/* Knowledge Level Selection Buttons */
+/* Knowledge Level Selected */
+#selection-kl-button-selected {
+    border: white 2px solid;
+    cursor: pointer;
+}

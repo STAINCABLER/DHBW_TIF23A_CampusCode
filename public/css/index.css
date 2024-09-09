@@ -1,0 +1,81 @@
+/* Elemente */
+* {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+    user-select: none;
+}
+body {
+    height: 100%;
+    width: 100%;
+}
+
+hr {
+    border: none;
+    height: 2px;
+    background: #0E131F;
+}
+
+/* Klassen */
+.wrapper {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    border-radius: 0;
+    background-color: #0E131F;
+}
+
+.main-area {
+    max-width: 86vw;
+    background-color: #0E131F;
+    flex-grow: 1;
+    overflow-y: hidden;
+}
+
+.main-area.breit {
+    max-width: 95vw;
+    background-color: #0E131F;
+    flex-grow: 1;
+    overflow-y: hidden;
+}
+
+.opportunity-button-style {
+    background-color: #43aa8b; /* Hintergrundfarbe */
+    color: white; /* Textfarbe */
+    border-radius: 5px; /* Kein Rand */
+    padding: 2px 26px; /* Polsterung */
+    text-align: center; /* Text zentrieren */
+    text-decoration: none; /* Keine Textdekoration */
+    display: flex; /* Flex-Container */
+    align-items: center; /* Vertikale Zentrierung */
+    justify-content: center; /* Horizontale Zentrierung */
+    font-size: 16px;
+    font-weight: bold;
+    margin: 4px 2px;
+    cursor: pointer; /* Zeiger-Cursor beim Überfahren */
+    width: 100%; /* Volle Breite */
+    height: fit-content; /* Höhe anpassen */
+    z-index: 2;
+}
+
+.oportunity-button-style:hover {
+    background-color: #2c6e5a; /* Dunkleres Blau beim Überfahren */
+}
+
+.opportunity-button-style.hidden {
+    display: none; /* Verstecken */
+}
+
+.opportunity-button-style span {
+    line-height: 1.2; /* Zeilenhöhe */
+}
+
+.opportunity-icon {
+    width: 24px; /* Fixed width */
+    height: 24px; /* Fixed height */
+    margin: 8px; /* Margin for spacing */
+    line-height: 1.2; /* Line height */
+}

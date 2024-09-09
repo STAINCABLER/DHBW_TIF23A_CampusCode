@@ -1,0 +1,304 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Meta Tags -->
+    <meta charset="UTF-8"/>
+    <link href="graphics/favicon.svg" rel="icon" type="image/svg+xml"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>CampusCode</title>
+
+    <!-- CDN Library's -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://code.iconify.design/1/1.0.6/iconify.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/showdown@2.1.0/dist/showdown.min.js"></script>
+
+    <!-- Stylesheets -->
+    <link href="../css/sidebar.css" rel="stylesheet"/>
+    <link href="../css/index.css" rel="stylesheet"/>
+    <link href="../css/landingpage.css" rel="stylesheet"/>
+    <link href="../css/selection.css" rel="stylesheet"/>
+    <link href="../css/chat.css" rel="stylesheet"/>
+    <link href="../css/bubble-animation.css" rel="stylesheet"/>
+    <link href="../css/popover.css" rel="stylesheet"/>
+
+</head>
+<body class="bg-gray-50">
+<!-- WEITERLEITUNG -->
+<script src="../scripts/main-chat.js" type="module"></script>
+
+<!-- Popover -->
+<div id="overlay"></div>
+<div id="pop" popover>
+    <p>The OpenAI API is currently unavailable.</p>
+    <p>Please try again later!</p>
+    <button id="closePopover">Close</button>
+</div>
+
+<!-- Wrapper -->
+<div class="wrapper flex h-screen bg-white shadow rounded-lg p-4 mb-4">
+
+    <!-- Sidebar -->
+    <nav class="sidebar bg-white shadow p-4" id="sidebar-active">
+
+        <button class="square-button sidebar-toggle mb-8">
+            <span class="sidebar-icon sidebar-toggle iconify sb-max" data-icon="mdi-arrow-collapse-left"></span>
+            <span class="sidebar-icon sidebar-toggle iconify sb-mini hidden" data-icon="mdi-arrow-expand-right"></span>
+        </button>
+
+        <button class="input-button mb-2 w-full rect-input-button" id="sidebar-login">
+            <span class="sb-max ml-14">Login</span>
+            <span class="sidebar-icon iconify sb-mini hidden" data-icon="mdi-account" title="Login"></span>
+        </button>
+
+        <button class="input-button mb-4 w-full rect-input-button" id="sidebar-register">
+            <span class="sb-max ml-12">Register</span>
+            <span class="sidebar-icon iconify sb-mini hidden" data-icon="mdi-account-multiple-plus"
+                  title="Register"></span>
+        </button>
+
+        <button class="input-button mb-4 w-full rect-input-button" id="sidebar-help">
+            <span class="sb-max ml-8">Learn More <span class="inline-block ml-auto iconify"
+                                                       data-icon="mdi-information-outline"></span></span>
+            <span class="sidebar-icon iconify sb-mini hidden" data-icon="mdi-information-outline"
+                  title="Information's"></span>
+        </button>
+
+        <p class="text-gray-400 text-xs mb-8 mr-24 sb-max">CampusCode ®</p>
+        <img alt="Code Campus" class="text-gray-400 mb-4 sb-mini hidden" height="50" src="graphics/side-icon.svg"
+             width="50">
+    </nav>
+
+
+    <!-- Main Content Area -->
+    <main class="main-area p-4">
+        <!-- Landing Main Content Area -->
+        <div class="landing-container w-full h-full">
+            <!-- Bubble Animation -->
+            <div class="bubble-container">
+                <div class="bubble">
+                    <span style="--i:11;"></span>
+                    <span style="--i:12;"></span>
+                    <span style="--i:24;"></span>
+                    <span style="--i:10;"></span>
+                    <span style="--i:14;"></span>
+                    <span style="--i:23;"></span>
+                    <span style="--i:18;"></span>
+                    <span style="--i:16;"></span>
+                    <span style="--i:19;"></span>
+                    <span style="--i:20;"></span>
+                    <span style="--i:22;"></span>
+                    <span style="--i:25;"></span>
+                    <span style="--i:18;"></span>
+                    <span style="--i:21;"></span>
+                    <span style="--i:15;"></span>
+                    <span style="--i:13;"></span>
+                    <span style="--i:26;"></span>
+                    <span style="--i:17;"></span>
+                    <span style="--i:15;"></span>
+                    <span style="--i:28;"></span>
+                    <span style="--i:11;"></span>
+                    <span style="--i:12;"></span>
+                    <span style="--i:24;"></span>
+                    <span style="--i:10;"></span>
+                    <span style="--i:14;"></span>
+                    <span style="--i:23;"></span>
+                    <span style="--i:18;"></span>
+                    <span style="--i:16;"></span>
+                    <span style="--i:19;"></span>
+                    <span style="--i:20;"></span>
+                    <span style="--i:22;"></span>
+                    <span style="--i:25;"></span>
+                    <span style="--i:18;"></span>
+                    <span style="--i:21;"></span>
+                    <span style="--i:15;"></span>
+                    <span style="--i:13;"></span>
+                    <span style="--i:26;"></span>
+                    <span style="--i:17;"></span>
+                    <span style="--i:15;"></span>
+                    <span style="--i:28;"></span>
+                </div>
+            </div>
+            <!-- Container for Landingpage -->
+            <div class="flex h-full w-full">
+                <!-- Landingpage -->
+                <section class="landing-box bg-white shadow rounded-lg p-4 pb-1 mb-4 h-full w-full" id="landing">
+                    <div>
+                        <h1 class="text-2xl font-semibold mb-4 text-center">Welcome to CampusCode! 🥳🎉</h1>
+                        <hr class="mb-8">
+                    </div>
+                    <img alt="Code Campus" class="mb-4" height="200" src="graphics/favicon.svg" width="300">
+                    <div class="flex justify-center flex-col">
+                        <p class="text-lg font-semibold mb-4 ml-8 text-center">CampusCode is a platform to learn
+                            programming languages interactively.</p>
+                        <p class="text-lg font-semibold mb-4 ml-8 text-center">Our chatbot will guide you through the
+                            learning process.</p>
+                        <p class="text-lg font-semibold mb-4 ml-8 text-center">Get started by selecting your programming
+                            language and knowledge level.</p>
+                    </div>
+                    <div class="info-box">
+                        <p class="text-lg font-semibold mb-4 ml-8 text-center">NOTE! This website is a prototype!</p>
+                        <p class="text-lg font-semibold mb-4 ml-8 text-center">No guarantee is given for correct and
+                            complete information!</p>
+                    </div>
+                    <button class="opportunity-button-style" id="landing-start">
+                        <span class="ml-8">Let's start your journey! ✨</span>
+                        <span class="opportunity-icon inline-block ml-auto iconify" data-icon="mdi-play"></span>
+                    </button>
+                </section>
+            </div>
+        </div>
+
+        <!-- Selection Main Content Area -->
+        <div class="selections-container w-full h-full">
+            <!-- Bubble Animation -->
+            <div class="bubble-container">
+                <div class="bubble">
+                    <span style="--i:11;"></span>
+                    <span style="--i:12;"></span>
+                    <span style="--i:24;"></span>
+                    <span style="--i:10;"></span>
+                    <span style="--i:14;"></span>
+                    <span style="--i:23;"></span>
+                    <span style="--i:18;"></span>
+                    <span style="--i:16;"></span>
+                    <span style="--i:19;"></span>
+                    <span style="--i:20;"></span>
+                    <span style="--i:22;"></span>
+                    <span style="--i:25;"></span>
+                    <span style="--i:18;"></span>
+                    <span style="--i:21;"></span>
+                    <span style="--i:15;"></span>
+                    <span style="--i:13;"></span>
+                    <span style="--i:26;"></span>
+                    <span style="--i:17;"></span>
+                    <span style="--i:15;"></span>
+                    <span style="--i:28;"></span>
+                    <span style="--i:11;"></span>
+                    <span style="--i:12;"></span>
+                    <span style="--i:24;"></span>
+                    <span style="--i:10;"></span>
+                    <span style="--i:14;"></span>
+                    <span style="--i:23;"></span>
+                    <span style="--i:18;"></span>
+                    <span style="--i:16;"></span>
+                    <span style="--i:19;"></span>
+                    <span style="--i:20;"></span>
+                    <span style="--i:22;"></span>
+                    <span style="--i:25;"></span>
+                    <span style="--i:18;"></span>
+                    <span style="--i:21;"></span>
+                    <span style="--i:15;"></span>
+                    <span style="--i:13;"></span>
+                    <span style="--i:26;"></span>
+                    <span style="--i:17;"></span>
+                    <span style="--i:15;"></span>
+                    <span style="--i:28;"></span>
+                </div>
+            </div>
+            <!-- Container for both selections -->
+            <div class="flex h-full w-full">
+                <!-- Programming Language Selection -->
+                <section class="selection-box bg-white shadow rounded-lg p-4 pb-1 mb-4 h-full w-full"
+                         id="selection-pl">
+                    <h1 class="text-xl font-semibold mb-4">Programming Language</h1>
+                    <hr class="mb-8">
+                    <div class="flex-1 flex flex-col justify-center items-center">
+                        <button class="selection-button selection-pl button-1 w-full mb-8 font-semibold"
+                                onclick="activateButton(this)" value="option1">
+                            Python
+                        </button>
+                        <button class="selection-button selection-pl button-2 w-full mb-8 font-semibold"
+                                onclick="activateButton(this)" value="option2">
+                            Java
+                        </button>
+                        <button class="selection-button selection-pl button-3 w-full mb-8 font-semibold"
+                                onclick="activateButton(this)" value="option3">
+                            JavaScript
+                        </button>
+                    </div>
+                </section>
+
+                <!-- Knowledge Level Selection -->
+                <section class="selection-box bg-white shadow rounded-lg p-4 pb-1 mb-4 h-full w-full"
+                         id="selection-kl">
+                    <h1 class="text-xl font-semibold mb-4">Knowledge Level</h1>
+                    <hr class="mb-8">
+                    <div class="flex-1 flex flex-col justify-center items-center">
+                        <button class="selection-button selection-kl button-1 w-full mb-8 font-semibold"
+                                onclick="activateButton(this)" value="option1">
+                            Beginner
+                        </button>
+                        <button class="selection-button selection-kl button-2 w-full mb-8 font-semibold"
+                                onclick="activateButton(this)" value="option2">
+                            Intermediate
+                        </button>
+                        <button class="selection-button selection-kl button-3 w-full mb-8 font-semibold"
+                                onclick="activateButton(this)" value="option3">
+                            Advanced
+                        </button>
+                    </div>
+                </section>
+            </div>
+            <div class="flex justify-center">
+                <button class="opportunity-button-style hidden" id="selection-start">
+                    <span class="ml-8 text-center">Start Learning! 🎓</span>
+                    <span class="opportunity-icon inline-block ml-auto iconify" data-icon="mdi-play"></span>
+                </button>
+            </div>
+        </div>
+
+
+        <!-- Chat Main Content Area -->
+        <div class="chat-container w-full h-full">
+            <!-- Container for Chat -->
+            <div class="flex h-full w-full">
+                <!-- Chat -->
+                <section class="chat-box bg-white shadow rounded-lg p-4 pb-1 mb-4 h-full w-full" id="chat">
+                    <div class="w-full">
+                        <h1 class="text-xl font-semibold mb-4 text-center">Chat</h1>
+                        <hr class="mb-8">
+                    </div>
+                    <div class="chat-messages">
+                        <div class="big-field">
+                            <div id="history"></div>
+                            <p id="history_html"></p>
+                            <p id="api_info"></p>
+                        </div>
+                    </div>
+                    <div class="context-wrapper flex items-center w-full">
+                        <button class="change-context-button" id="active" onclick="activateButton(this)"
+                                value="option1">
+                            <span>Summarise</span>
+                        </button>
+                        <button class="change-context-button" onclick="activateButton(this)" value="option2">
+                            <span>Create Task</span>
+                        </button>
+                        <button id="backto-selection-button">
+                            <span class="iconify button-icon" data-icon="mdi-web"></span>
+                        </button>
+                    </div>
+                    <div class="input-wrapper flex items-center w-full">
+                        <label for="chat-input">
+                            <input id="chat-input" placeholder="Type your message..." type="text">
+                        </label>
+                        <button id="chat-send-button">
+                            <span class="iconify button-icon" data-icon="mdi-send"></span>
+                        </button>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+
+
+</div>
+
+<!-- Scripts -->
+<script src="../scripts/functions.js" type="module"></script>
+<script src="../scripts/sidebar.js" type="module"></script>
+<script src="../scripts/landing.js" type="module"></script>
+<script src="../scripts/selection.js" type="module"></script>
+<script src="../scripts/open-chat.js" type="module"></script>
+<script src="../scripts/popover.js" type="module"></script>
+</body>
+</html>

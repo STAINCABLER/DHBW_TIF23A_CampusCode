@@ -1,0 +1,7 @@
+<component name="ProjectRunConfigurationManager">
+    <configuration default="false" name="test-hash-gen.js" type="NodeJSConfigurationType" nameIsGenerated="true"
+                   path-to-js-file="$PROJECT_DIR$/application/config/test-hash-gen.js"
+                   working-dir="$PROJECT_DIR$/application/config">
+        <method v="2"/>
+    </configuration>
+</component>

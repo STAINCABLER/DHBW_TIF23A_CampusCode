@@ -1,0 +1,27 @@
+/* Klassen */
+.landing-container {
+    /*display: none; */
+    position: relative;
+
+}
+
+.landing-box {
+    background-color: rgba(52, 53, 71, 0.8);
+    color: #D6D6D6;
+    height: 100%;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: space-between;
+    z-index: 2;
+}
+
+.landing-box img {
+    margin-left: 42%;
+}
+
+.info-box {
+    padding-top: 12px;
+    border-radius: 5px;
+    background: #FF0000BB;
+}

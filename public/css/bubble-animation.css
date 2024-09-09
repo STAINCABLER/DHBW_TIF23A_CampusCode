@@ -1,0 +1,62 @@
+:root {
+    --color-blue: #0077b6CC;
+    --color-pink: #f72585CC;
+    --color-green: #43aa8bCC;
+    --color-blue-shadow: #00517c66;
+    --color-pink-shadow: #a81a5b66;
+    --color-green-shadow: #2c6e5a66;
+}
+
+.bubble-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.bubble {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.bubble span {
+    width: 30px;
+    height: 30px;
+    background: var(--color-blue);
+    margin: 0 4px;
+    border-radius: 50%;
+    box-shadow:
+            0 0 0 10px var(--color-blue-shadow),
+            0 0 50px var(--color-blue),
+            0 0 100px var(--color-blue);
+    animation: animate 20s linear infinite;
+    animation-duration: calc(150s / var(--i));
+}
+
+.bubble span:nth-child(even) {
+    background: var(--color-pink);
+    box-shadow:
+            0 0 0 10px var(--color-pink-shadow),
+            0 0 50px var(--color-pink),
+            0 0 100px var(--color-pink);
+}
+
+.bubble span:nth-child(3n) {
+    background: var(--color-green);
+    box-shadow:
+            0 0 0 10px var(--color-green-shadow),
+            0 0 50px var(--color-green),
+            0 0 100px var(--color-green);
+}
+
+@keyframes animate {
+    0% {
+        transform: translateY(100vh) scale(0);
+    }
+    100% {
+        transform: translateY(-10vh) scale(1);
+    }
+}
