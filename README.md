@@ -1,10 +1,10 @@
 # Anwendungsprojekt TIF23A Gruppe C
 
-Webseite:
-[CampusCode](https://cc.thulium-labs.de)
+~~Webseite Application-Test:~~
+~~[CampusCode](https://cc.thulium-labs.de)~~
 
 Lizenz der Software:
-[Licence.md](/application/licence.md)
+[Licence.md](/licence.md)
 
 ## Gruppenmitglieder
 - Tobias Maimone
