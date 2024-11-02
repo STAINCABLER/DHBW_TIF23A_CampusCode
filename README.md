@@ -1,7 +1,7 @@
 # Anwendungsprojekt TIF23A Gruppe C
 
 Webseite Application-Test:
-~~[CampusCode](https://cc.thulium-labs.de)~~
+[CampusCode](https://campus-code.thulium-labs.de)
 
 Lizenz der Software:
 [Licence.md](/licence.md)
